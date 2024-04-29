@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../ErrorFunnel.gen/sources_1/ip/ram_2047_17/sim/ram_2047_17.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

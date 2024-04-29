@@ -1,0 +1,2 @@
+fifo_128_50.v,verilog,xil_defaultlib,../../../../ErrorFunnel.gen/sources_1/ip/fifo_128_50/sim/fifo_128_50.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

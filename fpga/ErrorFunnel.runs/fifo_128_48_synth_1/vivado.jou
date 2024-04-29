@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Nov 17 09:53:25 2023
+# Process ID: 13920
+# Current directory: D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/fifo_128_48_synth_1
+# Command line: vivado.exe -log fifo_128_48.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_128_48.tcl
+# Log file: D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/fifo_128_48_synth_1/fifo_128_48.vds
+# Journal file: D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/fifo_128_48_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fifo_128_48.tcl -notrace

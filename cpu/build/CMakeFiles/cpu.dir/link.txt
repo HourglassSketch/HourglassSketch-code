@@ -1,0 +1,1 @@
+/usr/bin/c++  -O2 -g -fopenmp   CMakeFiles/cpu.dir/main.cc.o  -o cpu 

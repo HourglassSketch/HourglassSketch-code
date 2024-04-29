@@ -1,0 +1,2 @@
+ram_2048_128.v,verilog,xil_defaultlib,../../../../ErrorFunnel.gen/sources_1/ip/ram_2048_128/sim/ram_2048_128.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
