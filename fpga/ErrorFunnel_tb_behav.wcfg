@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ErrorFunnel_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ErrorFunnel_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="204834fs"></ZoomStartTime>
+      <ZoomEndTime time="1879835fs"></ZoomEndTime>
+      <Cursor1Time time="484000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="259"></NameColumnWidth>
+      <ValueColumnWidth column_width="166"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="29" />
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/i_clk" type="logic">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/i_rst_n" type="logic">
+      <obj_property name="ElementShortName">i_rst_n</obj_property>
+      <obj_property name="ObjectShortName">i_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/i_uv" type="array">
+      <obj_property name="ElementShortName">i_uv[63:0]</obj_property>
+      <obj_property name="ObjectShortName">i_uv[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/i_uv_en" type="logic">
+      <obj_property name="ElementShortName">i_uv_en</obj_property>
+      <obj_property name="ObjectShortName">i_uv_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/uv_crc32" type="array">
+      <obj_property name="ElementShortName">uv_crc32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">uv_crc32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/uv_coco_tower" type="array">
+      <obj_property name="ElementShortName">uv_coco_tower[63:0]</obj_property>
+      <obj_property name="ObjectShortName">uv_coco_tower[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/uv_coco_tower_en" type="logic">
+      <obj_property name="ElementShortName">uv_coco_tower_en</obj_property>
+      <obj_property name="ObjectShortName">uv_coco_tower_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u1v1PureCnt_coco_tower" type="array">
+      <obj_property name="ElementShortName">u1v1PureCnt_coco_tower[95:0]</obj_property>
+      <obj_property name="ObjectShortName">u1v1PureCnt_coco_tower[95:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u1v1PureCnt_coco_tower_en" type="logic">
+      <obj_property name="ElementShortName">u1v1PureCnt_coco_tower_en</obj_property>
+      <obj_property name="ObjectShortName">u1v1PureCnt_coco_tower_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u_crc32" type="array">
+      <obj_property name="ElementShortName">u_crc32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">u_crc32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u_crc32_en" type="logic">
+      <obj_property name="ElementShortName">u_crc32_en</obj_property>
+      <obj_property name="ObjectShortName">u_crc32_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/v_crc32" type="array">
+      <obj_property name="ElementShortName">v_crc32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">v_crc32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/v_crc32_en" type="logic">
+      <obj_property name="ElementShortName">v_crc32_en</obj_property>
+      <obj_property name="ObjectShortName">v_crc32_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u1_crc32" type="array">
+      <obj_property name="ElementShortName">u1_crc32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">u1_crc32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u1_crc32_en" type="logic">
+      <obj_property name="ElementShortName">u1_crc32_en</obj_property>
+      <obj_property name="ObjectShortName">u1_crc32_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/v1_crc32" type="array">
+      <obj_property name="ElementShortName">v1_crc32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">v1_crc32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/v1_crc32_en" type="logic">
+      <obj_property name="ElementShortName">v1_crc32_en</obj_property>
+      <obj_property name="ObjectShortName">v1_crc32_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u_towertcm_2b/ram_wr_addr" type="array">
+      <obj_property name="ElementShortName">ram_wr_addr[13:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_wr_addr[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u_towertcm_2b/ram_wr_data" type="array">
+      <obj_property name="ElementShortName">ram_wr_data[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_wr_data[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u_towertcm_2b/ram_wr_en" type="logic">
+      <obj_property name="ElementShortName">ram_wr_en</obj_property>
+      <obj_property name="ObjectShortName">ram_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u_towertcm_4b/ram_wr_addr" type="array">
+      <obj_property name="ElementShortName">ram_wr_addr[13:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_wr_addr[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u_towertcm_4b/ram_wr_data" type="array">
+      <obj_property name="ElementShortName">ram_wr_data[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_wr_data[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u_towertcm_4b/ram_wr_en" type="logic">
+      <obj_property name="ElementShortName">ram_wr_en</obj_property>
+      <obj_property name="ObjectShortName">ram_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u_towertcm_8b/ram_wr_addr" type="array">
+      <obj_property name="ElementShortName">ram_wr_addr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_wr_addr[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u_towertcm_8b/ram_wr_data" type="array">
+      <obj_property name="ElementShortName">ram_wr_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_wr_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u_towertcm_8b/ram_wr_en" type="logic">
+      <obj_property name="ElementShortName">ram_wr_en</obj_property>
+      <obj_property name="ObjectShortName">ram_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u_towertcm_16b/ram_wr_addr" type="array">
+      <obj_property name="ElementShortName">ram_wr_addr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_wr_addr[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u_towertcm_16b/ram_wr_data" type="array">
+      <obj_property name="ElementShortName">ram_wr_data[26:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_wr_data[26:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ErrorFunnel_tb/u_errorfunnel_top/u_towertcm_16b/ram_wr_en" type="logic">
+      <obj_property name="ElementShortName">ram_wr_en</obj_property>
+      <obj_property name="ObjectShortName">ram_wr_en</obj_property>
+   </wvobject>
+</wave_config>

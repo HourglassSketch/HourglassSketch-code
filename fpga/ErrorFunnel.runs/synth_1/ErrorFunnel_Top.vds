@@ -1,0 +1,584 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Nov 18 16:16:51 2023
+# Process ID: 24016
+# Current directory: D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1
+# Command line: vivado.exe -log ErrorFunnel_Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ErrorFunnel_Top.tcl
+# Log file: D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/ErrorFunnel_Top.vds
+# Journal file: D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ErrorFunnel_Top.tcl -notrace
+Command: synth_design -top ErrorFunnel_Top -part xc7vx690tffg1761-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Device 21-403] Loading part xc7vx690tffg1761-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26580
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1329.379 ; gain = 242.543
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ErrorFunnel_Top' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/ErrorFunnel_Top.v:10]
+INFO: [Synth 8-6157] synthesizing module 'CRC32_64in' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/CRC32_64in.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'CRC32_64in' (1#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/CRC32_64in.v:10]
+INFO: [Synth 8-6157] synthesizing module 'CocoSketch' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/CocoSketch.v:10]
+	Parameter RAM_PTR bound to: 11 - type: integer 
+	Parameter HASH_BASE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ram_2048_128' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/.Xil/Vivado-24016-LAPTOP-CK74LVEA/realtime/ram_2048_128_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram_2048_128' (2#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/.Xil/Vivado-24016-LAPTOP-CK74LVEA/realtime/ram_2048_128_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CocoSketch' (3#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/CocoSketch.v:10]
+INFO: [Synth 8-6157] synthesizing module 'CRC32_32in' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/CRC32_32in.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'CRC32_32in' (4#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/CRC32_32in.v:10]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/ErrorFunnel_Top.v:140]
+INFO: [Synth 8-6157] synthesizing module 'TowerTCM_2b' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_2b.v:10]
+	Parameter M_DIM bound to: 128 - type: integer 
+	Parameter M_DIM_CLOG2 bound to: 7 - type: integer 
+	Parameter RAM_DEPTH bound to: 14 - type: integer 
+	Parameter RAM_WIDTH bound to: 2 - type: integer 
+	Parameter BUCKET_MAX bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_2b.v:67]
+INFO: [Synth 8-226] default block is never used [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_2b.v:143]
+INFO: [Synth 8-6157] synthesizing module 'Delay_3clock' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/Delay_3clock.v:10]
+	Parameter WIDTH bound to: 48 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Delay_3clock' (5#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/Delay_3clock.v:10]
+INFO: [Synth 8-6157] synthesizing module 'ram_16384_2' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/.Xil/Vivado-24016-LAPTOP-CK74LVEA/realtime/ram_16384_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram_16384_2' (6#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/.Xil/Vivado-24016-LAPTOP-CK74LVEA/realtime/ram_16384_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fifo_128_48' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/.Xil/Vivado-24016-LAPTOP-CK74LVEA/realtime/fifo_128_48_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_128_48' (7#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/.Xil/Vivado-24016-LAPTOP-CK74LVEA/realtime/fifo_128_48_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TowerTCM_2b' (8#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_2b.v:10]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/ErrorFunnel_Top.v:160]
+INFO: [Synth 8-6157] synthesizing module 'TowerTCM_4b' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_4b.v:10]
+	Parameter M_DIM bound to: 128 - type: integer 
+	Parameter M_DIM_CLOG2 bound to: 7 - type: integer 
+	Parameter RAM_DEPTH bound to: 14 - type: integer 
+	Parameter RAM_WIDTH bound to: 4 - type: integer 
+	Parameter BUCKET_MAX bound to: 4'b1111 
+INFO: [Synth 8-226] default block is never used [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_4b.v:67]
+INFO: [Synth 8-226] default block is never used [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_4b.v:143]
+INFO: [Synth 8-6157] synthesizing module 'ram_16384_4' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/.Xil/Vivado-24016-LAPTOP-CK74LVEA/realtime/ram_16384_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram_16384_4' (9#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/.Xil/Vivado-24016-LAPTOP-CK74LVEA/realtime/ram_16384_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TowerTCM_4b' (10#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_4b.v:10]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/ErrorFunnel_Top.v:180]
+INFO: [Synth 8-6157] synthesizing module 'TowerTCM_8b' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_8b.v:10]
+	Parameter M_DIM bound to: 64 - type: integer 
+	Parameter M_DIM_CLOG2 bound to: 6 - type: integer 
+	Parameter RAM_DEPTH bound to: 12 - type: integer 
+	Parameter RAM_WIDTH bound to: 8 - type: integer 
+	Parameter BUCKET_MAX bound to: 8'b11111111 
+INFO: [Synth 8-226] default block is never used [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_8b.v:67]
+INFO: [Synth 8-226] default block is never used [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_8b.v:143]
+INFO: [Synth 8-6157] synthesizing module 'ram_4096_8' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/.Xil/Vivado-24016-LAPTOP-CK74LVEA/realtime/ram_4096_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram_4096_8' (11#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/.Xil/Vivado-24016-LAPTOP-CK74LVEA/realtime/ram_4096_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TowerTCM_8b' (12#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_8b.v:10]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/ErrorFunnel_Top.v:200]
+INFO: [Synth 8-6157] synthesizing module 'TowerTCM_16b' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_16b.v:10]
+	Parameter M_DIM bound to: 64 - type: integer 
+	Parameter M_DIM_CLOG2 bound to: 6 - type: integer 
+	Parameter RAM_DEPTH bound to: 12 - type: integer 
+	Parameter RAM_WIDTH bound to: 27 - type: integer 
+	Parameter BUCKET_MAX bound to: 16'b1111111111111111 
+INFO: [Synth 8-226] default block is never used [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_16b.v:62]
+INFO: [Synth 8-226] default block is never used [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_16b.v:160]
+INFO: [Synth 8-6157] synthesizing module 'Delay_3clock__parameterized0' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/Delay_3clock.v:10]
+	Parameter WIDTH bound to: 50 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Delay_3clock__parameterized0' (12#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/Delay_3clock.v:10]
+INFO: [Synth 8-226] default block is never used [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_16b.v:225]
+INFO: [Synth 8-6157] synthesizing module 'FreezeBucket' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/FreezeBucket.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Delay_2clock' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/Delay_2clock.v:10]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Delay_2clock' (13#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/Delay_2clock.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Delay_2clock__parameterized0' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/Delay_2clock.v:10]
+	Parameter WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Delay_2clock__parameterized0' (13#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/Delay_2clock.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Delay_2clock__parameterized1' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/Delay_2clock.v:10]
+	Parameter WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Delay_2clock__parameterized1' (13#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/Delay_2clock.v:10]
+INFO: [Synth 8-6157] synthesizing module 'ram_2047_17' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/.Xil/Vivado-24016-LAPTOP-CK74LVEA/realtime/ram_2047_17_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram_2047_17' (14#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/.Xil/Vivado-24016-LAPTOP-CK74LVEA/realtime/ram_2047_17_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FreezeBucket' (15#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/FreezeBucket.v:10]
+INFO: [Synth 8-6157] synthesizing module 'ram_4096_27' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/.Xil/Vivado-24016-LAPTOP-CK74LVEA/realtime/ram_4096_27_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram_4096_27' (16#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/.Xil/Vivado-24016-LAPTOP-CK74LVEA/realtime/ram_4096_27_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fifo_128_50' [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/.Xil/Vivado-24016-LAPTOP-CK74LVEA/realtime/fifo_128_50_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_128_50' (17#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/.Xil/Vivado-24016-LAPTOP-CK74LVEA/realtime/fifo_128_50_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TowerTCM_16b' (18#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/TowerTCM_16b.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'ErrorFunnel_Top' (19#1) [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sources_1/new/ErrorFunnel_Top.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1423.410 ; gain = 336.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1441.340 ; gain = 354.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1441.340 ; gain = 354.504
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1441.340 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/ram_2048_128/ram_2048_128/ram_2048_128_in_context.xdc] for cell 'u_cocosketch/ram_2048_128_key'
+Finished Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/ram_2048_128/ram_2048_128/ram_2048_128_in_context.xdc] for cell 'u_cocosketch/ram_2048_128_key'
+Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/ram_16384_2/ram_16384_2/ram_16384_2_in_context.xdc] for cell 'u_towertcm_2b/u_towertcm2b_ram'
+Finished Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/ram_16384_2/ram_16384_2/ram_16384_2_in_context.xdc] for cell 'u_towertcm_2b/u_towertcm2b_ram'
+Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/ram_16384_4/ram_16384_4/ram_16384_4_in_context.xdc] for cell 'u_towertcm_4b/u_towertcm4b_ram'
+Finished Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/ram_16384_4/ram_16384_4/ram_16384_4_in_context.xdc] for cell 'u_towertcm_4b/u_towertcm4b_ram'
+Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/ram_4096_8/ram_4096_8/ram_4096_8_in_context.xdc] for cell 'u_towertcm_8b/u_towertcm8b_ram'
+Finished Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/ram_4096_8/ram_4096_8/ram_4096_8_in_context.xdc] for cell 'u_towertcm_8b/u_towertcm8b_ram'
+Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/ram_2047_17/ram_2047_17/ram_2047_17_in_context.xdc] for cell 'u_towertcm_16b/u_freezebucket/u_freeze_bucket_ram'
+Finished Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/ram_2047_17/ram_2047_17/ram_2047_17_in_context.xdc] for cell 'u_towertcm_16b/u_freezebucket/u_freeze_bucket_ram'
+Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/ram_4096_27/ram_4096_27/ram_4096_27_in_context.xdc] for cell 'u_towertcm_16b/u_towertcm16b_ram'
+Finished Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/ram_4096_27/ram_4096_27/ram_4096_27_in_context.xdc] for cell 'u_towertcm_16b/u_towertcm16b_ram'
+Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/fifo_128_50/fifo_128_50/fifo_128_50_in_context.xdc] for cell 'u_towertcm_16b/u_main_fifo'
+Finished Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/fifo_128_50/fifo_128_50/fifo_128_50_in_context.xdc] for cell 'u_towertcm_16b/u_main_fifo'
+Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/fifo_128_50/fifo_128_50/fifo_128_50_in_context.xdc] for cell 'u_towertcm_16b/u_buffer_fifo'
+Finished Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/fifo_128_50/fifo_128_50/fifo_128_50_in_context.xdc] for cell 'u_towertcm_16b/u_buffer_fifo'
+Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/fifo_128_48/fifo_128_48/fifo_128_48_in_context.xdc] for cell 'u_towertcm_2b/u_main_fifo'
+Finished Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/fifo_128_48/fifo_128_48/fifo_128_48_in_context.xdc] for cell 'u_towertcm_2b/u_main_fifo'
+Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/fifo_128_48/fifo_128_48/fifo_128_48_in_context.xdc] for cell 'u_towertcm_2b/u_buffer_fifo'
+Finished Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/fifo_128_48/fifo_128_48/fifo_128_48_in_context.xdc] for cell 'u_towertcm_2b/u_buffer_fifo'
+Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/fifo_128_48/fifo_128_48/fifo_128_48_in_context.xdc] for cell 'u_towertcm_4b/u_main_fifo'
+Finished Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/fifo_128_48/fifo_128_48/fifo_128_48_in_context.xdc] for cell 'u_towertcm_4b/u_main_fifo'
+Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/fifo_128_48/fifo_128_48/fifo_128_48_in_context.xdc] for cell 'u_towertcm_4b/u_buffer_fifo'
+Finished Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/fifo_128_48/fifo_128_48/fifo_128_48_in_context.xdc] for cell 'u_towertcm_4b/u_buffer_fifo'
+Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/fifo_128_48/fifo_128_48/fifo_128_48_in_context.xdc] for cell 'u_towertcm_8b/u_main_fifo'
+Finished Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/fifo_128_48/fifo_128_48/fifo_128_48_in_context.xdc] for cell 'u_towertcm_8b/u_main_fifo'
+Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/fifo_128_48/fifo_128_48/fifo_128_48_in_context.xdc] for cell 'u_towertcm_8b/u_buffer_fifo'
+Finished Parsing XDC File [d:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.gen/sources_1/ip/fifo_128_48/fifo_128_48/fifo_128_48_in_context.xdc] for cell 'u_towertcm_8b/u_buffer_fifo'
+Parsing XDC File [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/constrs_1/new/ErrorFunnel_XDC.xdc]
+Finished Parsing XDC File [D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/constrs_1/new/ErrorFunnel_XDC.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1560.219 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1560.219 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_cocosketch/ram_2048_128_key' at clock pin 'clka' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_towertcm_16b/u_buffer_fifo' at clock pin 'clk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_towertcm_16b/u_main_fifo' at clock pin 'clk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_towertcm_16b/u_towertcm16b_ram' at clock pin 'clka' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_towertcm_16b/u_freezebucket/u_freeze_bucket_ram' at clock pin 'clka' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_towertcm_2b/u_buffer_fifo' at clock pin 'clk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_towertcm_2b/u_main_fifo' at clock pin 'clk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_towertcm_2b/u_towertcm2b_ram' at clock pin 'clka' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_towertcm_4b/u_buffer_fifo' at clock pin 'clk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_towertcm_4b/u_main_fifo' at clock pin 'clk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_towertcm_4b/u_towertcm4b_ram' at clock pin 'clka' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_towertcm_8b/u_buffer_fifo' at clock pin 'clk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_towertcm_8b/u_main_fifo' at clock pin 'clk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_towertcm_8b/u_towertcm8b_ram' at clock pin 'clka' is different from the actual clock period '4.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1570.508 ; gain = 483.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1761-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1570.508 ; gain = 483.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for u_cocosketch/ram_2048_128_key. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_towertcm_2b/u_towertcm2b_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_towertcm_4b/u_towertcm4b_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_towertcm_8b/u_towertcm8b_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_towertcm_16b/u_freezebucket/u_freeze_bucket_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_towertcm_16b/u_towertcm16b_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_towertcm_16b/u_buffer_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_towertcm_16b/u_main_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_towertcm_2b/u_buffer_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_towertcm_4b/u_buffer_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_towertcm_8b/u_buffer_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_towertcm_2b/u_main_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_towertcm_4b/u_main_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_towertcm_8b/u_main_fifo. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1570.508 ; gain = 483.672
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wr_fifo_state_reg' in module 'TowerTCM_2b'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_ram_state_reg' in module 'TowerTCM_2b'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_fifo_state_reg' in module 'TowerTCM_4b'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_ram_state_reg' in module 'TowerTCM_4b'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_fifo_state_reg' in module 'TowerTCM_8b'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_ram_state_reg' in module 'TowerTCM_8b'
+INFO: [Synth 8-802] inferred FSM for state register 'read_memory_state_reg' in module 'FreezeBucket'
+INFO: [Synth 8-802] inferred FSM for state register 'opr_state_reg' in module 'FreezeBucket'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_fifo_state_reg' in module 'TowerTCM_16b'
+INFO: [Synth 8-802] inferred FSM for state register 'towertcm_16b_state_reg' in module 'TowerTCM_16b'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_ram_state_reg' using encoding 'one-hot' in module 'TowerTCM_2b'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_fifo_state_reg' using encoding 'one-hot' in module 'TowerTCM_2b'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_ram_state_reg' using encoding 'one-hot' in module 'TowerTCM_4b'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_fifo_state_reg' using encoding 'one-hot' in module 'TowerTCM_4b'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_ram_state_reg' using encoding 'one-hot' in module 'TowerTCM_8b'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_fifo_state_reg' using encoding 'one-hot' in module 'TowerTCM_8b'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                             0000 |                             0000
+                 iSTATE3 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                  iSTATE |                             0011 |                             0011
+                 iSTATE0 |                             0100 |                             0100
+                 iSTATE9 |                             0101 |                             0101
+                 iSTATE7 |                             0110 |                             0110
+                 iSTATE5 |                             0111 |                             0111
+                 iSTATE8 |                             1000 |                             1000
+                 iSTATE6 |                             1001 |                             1001
+                 iSTATE2 |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'opr_state_reg' using encoding 'sequential' in module 'FreezeBucket'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                             0000 |                             0000
+                 iSTATE3 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                  iSTATE |                             0011 |                             0011
+                 iSTATE0 |                             0100 |                             0100
+                 iSTATE9 |                             0101 |                             0101
+                 iSTATE7 |                             0110 |                             0110
+                 iSTATE5 |                             0111 |                             0111
+                 iSTATE8 |                             1000 |                             1000
+                 iSTATE6 |                             1001 |                             1001
+                 iSTATE2 |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'read_memory_state_reg' using encoding 'sequential' in module 'FreezeBucket'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               10
+                 iSTATE1 |                               10 |                               01
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'towertcm_16b_state_reg' using encoding 'sequential' in module 'TowerTCM_16b'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_fifo_state_reg' using encoding 'one-hot' in module 'TowerTCM_16b'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1570.508 ; gain = 483.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 6     
+	   2 Input   16 Bit       Adders := 5     
+	   2 Input   14 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 4     
+	   2 Input   11 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 35    
+	   2 Input      1 Bit         XORs := 222   
+	   5 Input      1 Bit         XORs := 14    
+	  25 Input      1 Bit         XORs := 4     
+	   8 Input      1 Bit         XORs := 5     
+	  32 Input      1 Bit         XORs := 2     
+	   4 Input      1 Bit         XORs := 28    
+	  23 Input      1 Bit         XORs := 2     
+	  28 Input      1 Bit         XORs := 7     
+	  26 Input      1 Bit         XORs := 2     
+	  29 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 2     
+	  18 Input      1 Bit         XORs := 17    
+	  30 Input      1 Bit         XORs := 1     
+	   7 Input      1 Bit         XORs := 2     
+	  27 Input      1 Bit         XORs := 6     
+	  31 Input      1 Bit         XORs := 1     
+	  19 Input      1 Bit         XORs := 9     
+	  13 Input      1 Bit         XORs := 5     
+	  22 Input      1 Bit         XORs := 7     
+	  20 Input      1 Bit         XORs := 5     
+	  21 Input      1 Bit         XORs := 5     
+	  38 Input      1 Bit         XORs := 1     
+	  24 Input      1 Bit         XORs := 1     
+	  12 Input      1 Bit         XORs := 24    
+	  16 Input      1 Bit         XORs := 16    
+	  15 Input      1 Bit         XORs := 20    
+	  14 Input      1 Bit         XORs := 12    
+	  17 Input      1 Bit         XORs := 8     
+	  10 Input      1 Bit         XORs := 4     
++---Registers : 
+	              128 Bit    Registers := 3     
+	               96 Bit    Registers := 6     
+	               64 Bit    Registers := 2     
+	               50 Bit    Registers := 4     
+	               48 Bit    Registers := 12    
+	               32 Bit    Registers := 12    
+	               27 Bit    Registers := 3     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 4     
+	               12 Bit    Registers := 9     
+	               11 Bit    Registers := 8     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 55    
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 3     
+	   2 Input   96 Bit        Muxes := 3     
+	   2 Input   64 Bit        Muxes := 2     
+	   2 Input   50 Bit        Muxes := 3     
+	   4 Input   50 Bit        Muxes := 1     
+	   2 Input   48 Bit        Muxes := 9     
+	   4 Input   48 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 11    
+	   2 Input   27 Bit        Muxes := 7     
+	   4 Input   27 Bit        Muxes := 2     
+	   2 Input   17 Bit        Muxes := 4     
+	  11 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 7     
+	  11 Input   16 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 1     
+	   4 Input   14 Bit        Muxes := 2     
+	   4 Input   12 Bit        Muxes := 2     
+	  11 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 5     
+	   2 Input   11 Bit        Muxes := 23    
+	  11 Input   11 Bit        Muxes := 3     
+	   4 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 20    
+	  11 Input    4 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 5     
+	   5 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 41    
+	   4 Input    1 Bit        Muxes := 28    
+	  11 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1570.508 ; gain = 483.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1570.508 ; gain = 483.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1570.508 ; gain = 483.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 1571.730 ; gain = 484.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.402 ; gain = 497.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.402 ; gain = 497.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.402 ; gain = 497.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.402 ; gain = 497.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.402 ; gain = 497.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.402 ; gain = 497.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name     | RTL Name                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|ErrorFunnel_Top | u_cocosketch/hash_e_f5_reg[74] | 4      | 11    | YES          | NO                 | YES               | 11     | 0       | 
+|ErrorFunnel_Top | u_cocosketch/hash_e_f5_reg[63] | 5      | 64    | YES          | NO                 | YES               | 64     | 0       | 
+|ErrorFunnel_Top | u_cocosketch/P_ramdom_reg[31]  | 25     | 1     | YES          | NO                 | YES               | 0      | 1       | 
++----------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ram_2048_128  |         1|
+|2     |ram_4096_27   |         1|
+|3     |fifo_128_50   |         2|
+|4     |ram_2047_17   |         1|
+|5     |ram_16384_2   |         1|
+|6     |fifo_128_48   |         6|
+|7     |ram_16384_4   |         1|
+|8     |ram_4096_8    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |fifo_128     |     1|
+|2     |fifo_128_48_ |     5|
+|7     |fifo_128     |     1|
+|8     |fifo_128_50_ |     1|
+|9     |ram_16384    |     2|
+|11    |ram_2047     |     1|
+|12    |ram_2048     |     1|
+|13    |ram_4096     |     2|
+|15    |BUFG         |     1|
+|16    |CARRY4       |   114|
+|17    |LUT1         |     8|
+|18    |LUT2         |   603|
+|19    |LUT3         |   268|
+|20    |LUT4         |   357|
+|21    |LUT5         |   260|
+|22    |LUT6         |   647|
+|23    |MUXF7        |     1|
+|24    |SRL16E       |    75|
+|25    |SRLC32E      |     1|
+|26    |FDCE         |  2073|
+|27    |FDPE         |   169|
+|28    |FDRE         |    76|
+|29    |IBUF         |    67|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.402 ; gain = 497.566
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1584.402 ; gain = 368.398
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1584.402 ; gain = 497.566
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1596.469 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 115 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1601.402 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+87 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:50 . Memory (MB): peak = 1601.402 ; gain = 514.566
+INFO: [Common 17-1381] The checkpoint 'D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.runs/synth_1/ErrorFunnel_Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ErrorFunnel_Top_utilization_synth.rpt -pb ErrorFunnel_Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 18 16:17:55 2023...

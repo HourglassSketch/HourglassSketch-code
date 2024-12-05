@@ -1,0 +1,8 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+       200 elements have been sended.
+
+$finish called at time : 3 us : File "D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sim_1/new/ErrorFunnel_tb.v" Line 56
+       200 elements have been sended.
+
+$finish called at time : 3 us : File "D:/SourceCode/Xilinx/ErrorFunnel/ErrorFunnel.srcs/sim_1/new/ErrorFunnel_tb.v" Line 56

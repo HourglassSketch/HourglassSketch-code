@@ -1,0 +1,5 @@
+# HourglassSketch
+
+This is a Neo4j implementation of HourglassSketch base on [link](https://github.com/qiuhere/Wind-Bell-Index).
+
+If you want to run the code, please refer to the link above.

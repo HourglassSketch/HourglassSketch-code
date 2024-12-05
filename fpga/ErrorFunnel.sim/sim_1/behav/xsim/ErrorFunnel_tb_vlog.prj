@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ErrorFunnel.gen/sources_1/ip/fifo_128_50/fifo_128_50_sim_netlist.v" \
+"../../../../ErrorFunnel.gen/sources_1/ip/ram_4096_27/ram_4096_27_sim_netlist.v" \
+"../../../../ErrorFunnel.gen/sources_1/ip/ram_2047_17/ram_2047_17_sim_netlist.v" \
+"../../../../ErrorFunnel.gen/sources_1/ip/fifo_128_48/fifo_128_48_sim_netlist.v" \
+"../../../../ErrorFunnel.gen/sources_1/ip/ram_4096_8/ram_4096_8_sim_netlist.v" \
+"../../../../ErrorFunnel.gen/sources_1/ip/ram_16384_4/ram_16384_4_sim_netlist.v" \
+"../../../../ErrorFunnel.gen/sources_1/ip/ram_16384_2/ram_16384_2_sim_netlist.v" \
+"../../../../ErrorFunnel.gen/sources_1/ip/ram_2048_128/ram_2048_128_sim_netlist.v" \
+"../../../../ErrorFunnel.srcs/sources_1/new/CRC32_32in.v" \
+"../../../../ErrorFunnel.srcs/sources_1/new/CRC32_64in.v" \
+"../../../../ErrorFunnel.srcs/sources_1/new/CocoSketch.v" \
+"../../../../ErrorFunnel.srcs/sources_1/new/Delay_2clock.v" \
+"../../../../ErrorFunnel.srcs/sources_1/new/Delay_3clock.v" \
+"../../../../ErrorFunnel.srcs/sources_1/new/ErrorFunnel_Top.v" \
+"../../../../ErrorFunnel.srcs/sources_1/new/FreezeBucket.v" \
+"../../../../ErrorFunnel.srcs/sources_1/new/TowerTCM_16b.v" \
+"../../../../ErrorFunnel.srcs/sources_1/new/TowerTCM_2b.v" \
+"../../../../ErrorFunnel.srcs/sources_1/new/TowerTCM_4b.v" \
+"../../../../ErrorFunnel.srcs/sources_1/new/TowerTCM_8b.v" \
+"../../../../ErrorFunnel.srcs/sim_1/new/el_send.v" \
+"../../../../ErrorFunnel.srcs/sim_1/new/ErrorFunnel_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
